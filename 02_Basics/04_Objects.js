@@ -49,8 +49,54 @@ const users = [
 users[1].email;
 // console.log(tinderUser2);  // { id: '144', name: 'Raj Mishra', IsLoggedIn: true }
 
-console.log(Object.keys(tinderUser2));  // [ 'id', 'name', 'IsLoggedIn' ]
-console.log(Object.values(tinderUser2));  // [ '144', 'Raj Mishra', true ]
-console.log(Object.entries(tinderUser2));  // [ [ 'id', '144' ], [ 'name', 'Raj Mishra' ], [ 'IsLoggedIn', true ] ]
+// console.log(Object.keys(tinderUser2));  // [ 'id', 'name', 'IsLoggedIn' ]
+// console.log(Object.values(tinderUser2));  // [ '144', 'Raj Mishra', true ]
+// console.log(Object.entries(tinderUser2));  // [ [ 'id', '144' ], [ 'name', 'Raj Mishra' ], [ 'IsLoggedIn', true ] ]
 
-console.log(tinderUser2.hasOwnProperty('IsLoggedIn'));  // true
+// console.log(tinderUser2.hasOwnProperty('IsLoggedIn'));  // true
+
+
+
+//  ******************************** De-structuring Objects *************************** //
+
+const course = {
+    courseName : "JS in Hindi",
+    price : 1299,
+    courseTeacher : "Hitesh Sir"
+}
+
+const {courseTeacher : Teacher} = course;
+
+console.log(Teacher);     //  Hitesh Sir
+
+
+//  This is use in react.js
+
+const navbar = ({company}) => {
+
+};
+
+navbar(company = "HiteshLimited");
+
+
+//  APIs
+
+/*
+{
+    "name" : "Raj Mishra",
+    "age" : 19,
+    "price" : "free"
+}
+
+*/
+
+//  Anothertype of creating API
+
+/* 
+[
+{},
+{},
+{}
+]
+
+*/
