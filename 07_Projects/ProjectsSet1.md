@@ -5,6 +5,9 @@
 
 # Solution Code
 
+# Project 01:
+# JavaScript
+
 ```
 console.log('hitesh');
 const buttons = document.querySelectorAll('.button');
